@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Conversor de Temperaturas</title>
+</head>
+
+<body>
+    <main>
+        <fieldset>
+            <legend>Conversor de Temperatura</legend>
+            <form action="" id="myform">
+                <div class="userSelection">
+                    <input type="number" placeholder="Valor da temperatura" id="valTemp">
+                    <select name="opTemp" id="opTemp">
+                        <option value="c">Celsius</option>
+                        <option value="k">Kelvin</option>
+                        <option value="f">Fahrenheit</option>
+                    </select>
+                </div>
+                <h3>Converter para: </h3>
+                <select name="tempFinal" id="tempFinal">
+                    <option value="c">Celsius</option>
+                    <option value="k">Kelvin</option>
+                    <option value="f">Fahrenheit</option>
+                </select>
+                <input type="submit" value="Enviar" class="btn">
+            </form>
+        </fieldset>
+        <div id="result">
+            <!-- <h3> A temperatura 32°c em °k é: 305.0°k</h3> -->
+        </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
